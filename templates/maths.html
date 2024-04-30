@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function myFunction()
+            {
+                var num1=document.getElementById("txt1").value
+                var num2=document.getElementById("txt2").value
+                num3=parseFloat(num1);
+                num4=parseFloat(num2);
+                sum=num3+num4;
+                document.write(sum);
+            }
+            function myFunction1()
+            {
+                document.write(document.getElementById("txt1").value-
+                document.getElementById("txt2").value)
+            }
+            function myFunction2()
+            {
+                document.write(document.getElementById("txt1").value*
+                document.getElementById("txt2").value)
+            }
+            function myFunction3()
+            {
+                document.write(document.getElementById("txt1").value/
+                document.getElementById("txt2").value)
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <form>
+            <input type="number" name="value" id="txt1" style="width: 5%;">
+            <input type="number" name="value" id="txt2" style="width: 5%;"><br>
+            <button onclick="myFunction()">Add</button>
+            <button onclick="myFunction1()">Subtract</button>
+            <button onclick="myFunction2()">Multiply</button>
+            <button onclick="myFunction3()">Divide</button>
+        </form>
+    </body>
+</html>
